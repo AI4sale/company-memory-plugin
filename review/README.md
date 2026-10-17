@@ -1,4 +1,47 @@
-# Company Memory by AI 4 SALE: current product tour
+# Company Memory by AI 4 SALE: product and review walkthrough
+
+[Watch the complete walkthrough](company-memory-product-tour-v5.mp4) · [English captions](company-memory-product-tour-v5.en.srt) · [Exact prompts and checks](review-walkthrough.md)
+
+![Company Memory by AI 4 SALE](company-memory-product-tour-v5.jpg)
+
+One shared memory layer for your agents, harnesses and workplaces. The product
+tour covers permissions, team and agent connections, shared updates and moving
+between providers. The final section walks through all five functional review
+cases and three no-tool cases, with exact prompts and expected outcomes.
+
+Original AI 4 SALE logo, blue palette, fast English narration. All four connector
+diagrams are repaired. Duration: 04:14.
+
+- 00:00 Company Memory by AI 4 SALE
+- 00:12 Your guided tour
+- 00:26 01 / The interface
+- 00:36 02 / Read and write
+- 00:47 03 / Memories and zones
+- 00:58 04 / Invite a colleague
+- 01:07 05 / Connect a client
+- 01:18 06 / Update once
+- 01:28 07 / Use it everywhere
+- 01:38 08 / Your knowledge travels
+- 01:50 Complete guide on the website
+- 02:03 Review walkthrough / Setup
+- 02:16 P1 / Connection
+- 02:28 P2 / Search and read
+- 02:42 P3 / Submit and check status
+- 02:56 P4 / Cross-conversation memory
+- 03:08 P5 / Session and reconnection
+- 03:23 N1 / No tool needed
+- 03:34 N2 / No workspace access
+- 03:46 N3 / No workspace access
+- 03:58 Walkthrough complete
+
+This is a guided explanation of how to run and check the scenarios, not a new
+recording or pass report for all eight client executions.
+
+Video SHA256: `c9cc11080a3126c555b7ba594cbd84602f47ae4ce1987efcc6032a5d2bb6ca87`.
+
+## Previous versions
+
+### Previous product tour
 
 [Watch the 2:04 tour](company-memory-product-tour-v3.mp4) · [English captions](company-memory-product-tour-v3.en.srt) · [Complete guide](https://portal-stage.ai4.sale/support/company-memory)
 
