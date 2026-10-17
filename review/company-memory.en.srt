@@ -1,0 +1,115 @@
+1
+00:00:00,650 --> 00:00:05,053
+Useful knowledge should stay with your team when a conversation ends.
+
+2
+00:00:05,053 --> 00:00:10,656
+Company Memory gives your AI clients a shared place for selected decisions and results,
+
+3
+00:00:10,656 --> 00:00:13,058
+with access controlled by your workspace.
+
+4
+00:00:14,658 --> 00:00:19,782
+Start from Company Memory in your client's plugin catalogue and connect through the browser.
+
+5
+00:00:19,782 --> 00:00:24,906
+Create a workspace, or join an existing one with an invitation link or code.
+
+6
+00:00:24,906 --> 00:00:27,834
+This demo account already owns its shared memory.
+
+7
+00:00:29,434 --> 00:00:31,984
+Each connected client has its own identity.
+
+8
+00:00:31,984 --> 00:00:36,354
+You choose the memory, the zone, and the actions it may use.
+
+9
+00:00:36,354 --> 00:00:41,454
+Signing in does not silently create another memory or give a client access to
+
+10
+00:00:41,454 --> 00:00:41,818
+everything.
+
+11
+00:00:43,418 --> 00:00:46,705
+Here is a recorded result from the working pilot.
+
+12
+00:00:46,705 --> 00:00:51,087
+A selected note about the fictional Aurora project entered the review queue.
+
+13
+00:00:51,087 --> 00:00:53,643
+The server then confirmed accepted and visible.
+
+14
+00:00:53,643 --> 00:00:56,930
+A queued request alone is never reported as saved.
+
+15
+00:00:58,530 --> 00:01:03,218
+A separate read-only client retrieved that same note from the General zone.
+
+16
+00:01:03,218 --> 00:01:05,953
+Both clients received the identical source hash.
+
+17
+00:01:05,953 --> 00:01:11,422
+The knowledge belongs to the shared memory, so it does not depend on copying
+
+18
+00:01:11,422 --> 00:01:12,594
+the previous conversation.
+
+19
+00:01:14,194 --> 00:01:19,116
+The read-only client could retrieve the note, but its attempt to submit a new
+
+20
+00:01:19,116 --> 00:01:20,171
+one was denied.
+
+21
+00:01:20,171 --> 00:01:23,335
+A request to an unapproved memory was also denied.
+
+22
+00:01:23,335 --> 00:01:27,202
+These checks used an isolated test account, with no corporate records.
+
+23
+00:01:28,802 --> 00:01:34,718
+Disconnecting the reviewer client removed its access immediately, even while its token was still
+
+24
+00:01:34,718 --> 00:01:35,140
+valid.
+
+25
+00:01:35,140 --> 00:01:39,366
+The writer stayed connected and retrieved the same source afterward.
+
+26
+00:01:39,366 --> 00:01:42,746
+Shared knowledge and other approved clients remained available.
+
+27
+00:01:44,346 --> 00:01:48,666
+Company Memory keeps selected knowledge available across approved clients.
+
+28
+00:01:48,666 --> 00:01:54,906
+This walkthrough uses real portal screens and recorded pilot results with synthetic data.
+
+29
+00:01:54,906 --> 00:02:00,666
+Free and paid accounts use the same explicit connection and permission model.

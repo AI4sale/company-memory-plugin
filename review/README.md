@@ -1,4 +1,23 @@
-# Native pilot evidence walkthrough
+# Company Memory narrated pilot demo
+
+[Watch the narrated walkthrough](company-memory-narrated-demo.mp4) · [English subtitles](company-memory.en.srt)
+
+![Company Memory pilot demo](company-memory-narrated-demo.jpg)
+
+The 2-minute walkthrough shows the actual portal with an isolated synthetic
+account and clearly labelled summaries of recorded native MCP results. English
+synthetic narration and captions explain workspace creation/joining, separate
+client identities, selected publication, retrieval, access controls and revocation.
+
+This is an edited pilot demonstration. It is not a live ChatGPT conversation,
+execution of every directory review case, or evidence of public approval.
+No credentials, corporate records or customer data are included.
+
+Video: H.264, 1920×1080, 30 fps, 121.7 seconds, AAC stereo 48 kHz.
+SHA256: `5195662cfeaaaad330ff797b7b761db62e3eb038061856c2f035c551d8b042db`.
+
+## Earlier supplemental walkthrough
+
 
 [Watch or download the 72-second MP4](company-memory-pilot-walkthrough.mp4).
 
