@@ -1,4 +1,42 @@
-# Company Memory narrated pilot demo
+# Company Memory by AI 4 SALE
+
+[Watch the product tour](company-memory-product-tour-v2.mp4) · [English captions](company-memory-product-tour-v2.en.srt) · [Complete user guide](https://portal-stage.ai4.sale/support/company-memory)
+
+![Company Memory by AI 4 SALE](company-memory-product-tour-v2.jpg)
+
+Keep your knowledge when you change AI providers, devices and tasks.
+This 2-minute 52-second narrated tour covers the interface, read-only and write
+clients, memory and zone access, team invitations, new agent connections and a
+project website update shared across connected clients.
+
+## Chapters
+
+- 00:00 Why it matters
+- 00:15 Your guided tour
+- 00:31 01 / The interface
+- 00:46 02 / Read and write
+- 01:01 03 / Memories and zones
+- 01:17 04 / Invite a colleague
+- 01:30 05 / Connect a client
+- 01:45 06 / Update once
+- 02:00 07 / Use it everywhere
+- 02:15 08 / Your knowledge travels
+- 02:32 Complete guide on the website
+
+Actual portal captures are combined with workflow and device illustrations.
+The website-address example illustrates the next permitted read after publication;
+it is not a new live terminal or mobile acceptance recording. Compatible client
+integration is required. Narration uses a synthetic English voice.
+
+Video: H.264, 1920×1080, 30 fps, AAC stereo 48 kHz.
+SHA256: `0a92c54a3e041262c60bb0332ef5b3fa2eb76b0d33f8e2e1e0c28418dd0f4748`.
+
+## Previous review artifacts
+
+The older materials below are retained for traceability. The product tour above
+replaces the earlier narrated presentation.
+
+### Earlier narrated pilot demo
 
 [Watch the narrated walkthrough](company-memory-narrated-demo.mp4) · [English subtitles](company-memory.en.srt)
 
