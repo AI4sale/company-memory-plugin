@@ -1,0 +1,10 @@
+{
+  "name": "ai4sale-pilot",
+  "interface": {"displayName": "AI4SALE Pilot"},
+  "plugins": [{
+    "name": "company-memory",
+    "source": {"source": "local", "path": "./catalogue/pilot/company-memory"},
+    "policy": {"installation": "AVAILABLE", "authentication": "ON_INSTALL"},
+    "category": "Productivity"
+  }]
+}

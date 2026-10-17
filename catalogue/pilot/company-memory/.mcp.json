@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "company-memory": {
+      "type": "http",
+      "url": "https://portal-stage.ai4.sale/api/mcp",
+      "oauth": {
+        "clientId": "cm-stage-portal",
+        "callbackUrl": "http://127.0.0.1:62213/callback",
+        "callbackPort": 62213
+      }
+    }
+  }
+}

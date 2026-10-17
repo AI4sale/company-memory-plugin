@@ -1,0 +1,23 @@
+{
+  "name": "company-memory",
+  "version": "0.1.0-pilot.2",
+  "description": "Shared memory for your accounts and AI clients.",
+  "author": {
+    "name": "AI4SALE",
+    "url": "https://ai4.sale"
+  },
+  "homepage": "https://portal-stage.ai4.sale/connect",
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Company Memory",
+    "shortDescription": "Keep useful knowledge across conversations",
+    "longDescription": "Sign in, create a workspace or join one by invitation, then approve this client for shared memory. Each client has its own access and can be disconnected separately. Selected results go through publication checks. Private pilot.",
+    "developerName": "AI4SALE",
+    "category": "Productivity",
+    "websiteURL": "https://portal-stage.ai4.sale/connect",
+    "defaultPrompt": [
+      "Connect this client to my Company Memory workspace."
+    ]
+  }
+}
