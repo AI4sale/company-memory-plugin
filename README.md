@@ -23,3 +23,5 @@ If an unapproved request expires, explicitly ask the plugin to Connect again. Th
 This is a pilot catalogue package, not approval or listing in the public OpenAI directory. Backend service: portal-stage.ai4.sale. The account portal handles workspace plans separately. Do not use real card charges for acceptance testing. Native OAuth, workspace creation, invitation acceptance, reviewed publication, cross-client retrieval and selective revocation were exercised on clawd01. Public-directory review and the final launch acceptance remain pending.
 
 Support: info@ai4.sale
+
+Supplemental material: [native pilot evidence walkthrough](review/README.md).
