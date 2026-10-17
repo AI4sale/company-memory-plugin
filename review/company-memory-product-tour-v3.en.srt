@@ -1,0 +1,159 @@
+1
+00:00:00,300 --> 00:00:04,244
+Company Memory by AI 4 SALE gives all your AI agents, harnesses and workspaces
+
+2
+00:00:04,244 --> 00:00:05,371
+one shared memory layer.
+
+3
+00:00:05,371 --> 00:00:09,033
+On a server, on your phone, on your computer, or in the cloud.
+
+4
+00:00:09,033 --> 00:00:12,132
+Wherever you work, they connect to the same source of knowledge.
+
+5
+00:00:13,082 --> 00:00:16,713
+We will tour the interface, compare read-only and write clients, choose which memories and
+
+6
+00:00:16,713 --> 00:00:20,085
+zones each client can access, and connect a new team member or agent.
+
+7
+00:00:20,085 --> 00:00:23,197
+Then we will update one project fact and use it across devices.
+
+8
+00:00:24,340 --> 00:00:27,563
+Your account brings together memories, invitations, connected clients and your subscription.
+
+9
+00:00:27,563 --> 00:00:31,372
+Create a new workspace, or join an existing one with a connection code.
+
+10
+00:00:31,372 --> 00:00:33,717
+Each person signs in with their own account.
+
+11
+00:00:34,860 --> 00:00:38,242
+Give a research assistant read-only access to find and read shared knowledge.
+
+12
+00:00:38,242 --> 00:00:40,778
+Give a working agent permission to submit useful results.
+
+13
+00:00:40,778 --> 00:00:44,442
+Once an update is accepted and published, other authorized clients can retrieve it.
+
+14
+00:00:45,585 --> 00:00:48,485
+You decide which memory and zones a client may use.
+
+15
+00:00:48,485 --> 00:00:51,965
+A project agent can access its project knowledge without seeing unrelated material.
+
+16
+00:00:51,965 --> 00:00:55,734
+Choose read and write permissions separately, within the access your account already has.
+
+17
+00:00:56,877 --> 00:00:59,860
+Create an invitation and send the link or code to your colleague.
+
+18
+00:00:59,860 --> 00:01:02,842
+They sign in, join the existing workspace and connect their own clients.
+
+19
+00:01:02,842 --> 00:01:03,588
+No shared password.
+
+20
+00:01:03,588 --> 00:01:05,328
+No separate copy of your team knowledge.
+
+21
+00:01:06,471 --> 00:01:08,927
+Install the plugin from the catalogue and choose Connect.
+
+22
+00:01:08,927 --> 00:01:12,201
+Open the connection link, sign in, select the memory and approve access.
+
+23
+00:01:12,201 --> 00:01:16,021
+Every client gets its own identity, so you can disconnect one without removing the
+
+24
+00:01:16,021 --> 00:01:16,294
+others.
+
+25
+00:01:17,437 --> 00:01:19,920
+Imagine your project has moved to a new website.
+
+26
+00:01:19,920 --> 00:01:22,677
+Ask a write-enabled agent to update the existing project source.
+
+27
+00:01:22,677 --> 00:01:26,540
+Once that update is published, the new address is available in your shared memory.
+
+28
+00:01:27,682 --> 00:01:31,130
+Your terminal agent, desktop harness and compatible mobile client now read the same current
+
+29
+00:01:31,130 --> 00:01:31,377
+source.
+
+30
+00:01:31,377 --> 00:01:34,825
+The next time each agent asks for the project website, it gets the new
+
+31
+00:01:34,825 --> 00:01:35,070
+address.
+
+32
+00:01:35,070 --> 00:01:37,780
+You do not need to repeat the update in every chat.
+
+33
+00:01:38,922 --> 00:01:43,592
+Use OpenAI today, another provider tomorrow, or a local model through a compatible client.
+
+34
+00:01:43,592 --> 00:01:45,592
+Connect them to the same memory.
+
+35
+00:01:45,592 --> 00:01:49,928
+Your published decisions and project knowledge stay available across models, devices and tasks.
+
+36
+00:01:51,071 --> 00:01:55,268
+The detailed guide on our website walks through the full interface, permissions, invitations, clients
+
+37
+00:01:55,268 --> 00:01:56,167
+and knowledge updates.
+
+38
+00:01:56,167 --> 00:01:59,465
+Start with a Free workspace or choose an available paid plan.
+
+39
+00:01:59,465 --> 00:02:01,264
+Company Memory by AI 4 SALE.
+
+40
+00:02:01,264 --> 00:02:03,362
+Your knowledge, ready for the next conversation.

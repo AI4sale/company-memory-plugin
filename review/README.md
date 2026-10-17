@@ -1,4 +1,24 @@
-# Company Memory by AI 4 SALE
+# Company Memory by AI 4 SALE: current product tour
+
+[Watch the 2:04 tour](company-memory-product-tour-v3.mp4) · [English captions](company-memory-product-tour-v3.en.srt) · [Complete guide](https://portal-stage.ai4.sale/support/company-memory)
+
+![Company Memory by AI 4 SALE](company-memory-product-tour-v3.jpg)
+
+One shared memory layer for AI agents, harnesses and workplaces across server,
+phone, computer and cloud. The tour covers the interface, read-only and write
+clients, memory and zone permissions, team and agent connections, and shared
+project knowledge across providers.
+
+This revision uses the original AI 4 SALE logo, preserves the blue palette,
+introduces the product directly and increases narration and editing pace.
+Actual portal captures are combined with workflow and device illustrations.
+These illustrations do not represent additional live device acceptance tests.
+Compatible client integration is required; updated facts are available on the
+next permitted read after publication. The English voice is synthetic.
+
+## Earlier versions
+
+### Company Memory by AI 4 SALE (previous revision)
 
 [Watch the product tour](company-memory-product-tour-v2.mp4) · [English captions](company-memory-product-tour-v2.en.srt) · [Complete user guide](https://portal-stage.ai4.sale/support/company-memory)
 
