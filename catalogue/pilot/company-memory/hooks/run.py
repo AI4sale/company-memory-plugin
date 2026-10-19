@@ -29,6 +29,7 @@ def main():
     binding=ensure_binding(event['session_id'],state)
     credential_file=Path(os.environ.get('CODEX_HOME',str(Path.home()/'.codex')))/'.credentials.json'
     client=MCPCardClient({'endpoint':'https://memory.ai4.sale/api/mcp','credential_file':str(credential_file)},binding['task_id'])
+    client.timeout=3
     cached_path=state/hashlib.sha256(event['session_id'].encode()).hexdigest()[:32]/'native-consumer.json'
     cached=json.loads(cached_path.read_bytes()) if cached_path.exists() else None
     account=None
@@ -43,8 +44,12 @@ def main():
         pilot=Pilot(consumer,state,load_adapter(consumer),[Path(event['cwd']).resolve()])
         client=MCPCardClient(config,binding['task_id'])
         coordinator=NativeStorage(pilot,client,event['session_id'])
-        note=coordinator.coordinate(cached.get('policy'),event)
-        result=pilot.hook(event)
+        if event.get('hook_event_name')=='Stop':
+            result=pilot.hook(event)
+            note=coordinator.coordinate(cached.get('policy'),event)
+        else:
+            note=coordinator.coordinate(cached.get('policy'),event)
+            result=pilot.hook(event)
         if note:
             output=result.setdefault('hookSpecificOutput',{'hookEventName':event['hook_event_name']})
             output['additionalContext']=output.get('additionalContext','')+'\n'+note
@@ -89,8 +94,12 @@ def main():
     atomic(cached_path,encoded({'consumer':str(consumer),'policy':policy}))
     client=MCPCardClient(config,binding['task_id'])
     coordinator=NativeStorage(pilot,client,event['session_id'])
-    note=coordinator.coordinate(policy,event)
-    result=pilot.hook(event)
+    if event.get('hook_event_name')=='Stop':
+        result=pilot.hook(event)
+        note=coordinator.coordinate(policy,event)
+    else:
+        note=coordinator.coordinate(policy,event)
+        result=pilot.hook(event)
     if event.get('hook_event_name')=='UserPromptSubmit':note=coordinator.coordinate(policy,event)
     if note:
         output=result.setdefault('hookSpecificOutput',{'hookEventName':event['hook_event_name']})

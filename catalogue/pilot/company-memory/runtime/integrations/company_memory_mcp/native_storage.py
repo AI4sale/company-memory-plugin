@@ -6,7 +6,7 @@ checkpoint keeps exact bytes and request identity before any network write.
 import hashlib
 import json
 from pathlib import Path
-import urllib.error
+import time
 import yaml
 
 from filelock import FileLock
@@ -111,6 +111,17 @@ class NativeStorage:
         self.deliver_pending(state)
 
     def coordinate(self,policy,event):
+        previous_timeout=getattr(self.client,'timeout',30)
+        previous_deadline=getattr(self.client,'deadline',None)
+        self.client.timeout=3
+        self.client.deadline=time.monotonic()+8
+        try:return self._coordinate(policy,event)
+        finally:
+            self.client.timeout=previous_timeout
+            if previous_deadline is None:del self.client.deadline
+            else:self.client.deadline=previous_deadline
+
+    def _coordinate(self,policy,event):
         with FileLock(str(self.folder/'server-storage.lock'),timeout=3,mode=0o600):
             state=json.loads(self.path.read_bytes()) if self.path.exists() else {}
             previous=state.get('mode','local')

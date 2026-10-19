@@ -31,6 +31,8 @@ class MCPCardClient:
         return self
 
     def call(self,name,args):
+        remaining=getattr(self,'deadline',float('inf'))-time.monotonic()
+        if remaining<=0:raise CardTransportError('checkpoint_budget_exhausted',retryable=True)
         endpoint=self.config['endpoint']
         if endpoint!='https://memory.ai4.sale/api/mcp':
             raise CardTransportError('configured_resource_mismatch')
@@ -47,7 +49,7 @@ class MCPCardClient:
             'Content-Type':'application/json','Accept':'application/json, text/event-stream',
             'Authorization':'Bearer '+matches[0]['access_token'],'MCP-Protocol-Version':'2025-03-26'})
         try:
-            with urllib.request.urlopen(request,timeout=min(self.timeout,30)) as response:
+            with urllib.request.urlopen(request,timeout=min(self.timeout,30,remaining)) as response:
                 raw=response.read(1024*1024+1)
             if len(raw)>1024*1024:raise CardTransportError('response_too_large')
             result=json.loads(raw)['result']
