@@ -1,0 +1,61 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"${PLUGIN_ROOT}/hooks/run.py\"",
+            "commandWindows": "python \"%PLUGIN_ROOT%\\hooks\\run.py\"",
+            "timeout": 30,
+            "async": false,
+            "additionalContextLimit": 6000
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"${PLUGIN_ROOT}/hooks/run.py\"",
+            "commandWindows": "python \"%PLUGIN_ROOT%\\hooks\\run.py\"",
+            "timeout": 30,
+            "async": false
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "matcher": "compact",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"${PLUGIN_ROOT}/hooks/run.py\"",
+            "commandWindows": "python \"%PLUGIN_ROOT%\\hooks\\run.py\"",
+            "timeout": 30,
+            "async": false,
+            "additionalContextLimit": 6000
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "^mcp__(?:company_memory|company-memory)__(?:company_memory_search|company_memory_fetch|company_memory_card_upload|company_memory_card_download|company_memory_card_finalize|company_memory_submit_for_review)$",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"${PLUGIN_ROOT}/hooks/run.py\"",
+            "commandWindows": "python \"%PLUGIN_ROOT%\\hooks\\run.py\"",
+            "timeout": 30,
+            "async": false,
+            "additionalContextLimit": 6000
+          }
+        ]
+      }
+    ]
+  }
+}

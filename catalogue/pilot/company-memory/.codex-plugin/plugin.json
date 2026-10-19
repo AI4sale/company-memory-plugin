@@ -1,21 +1,21 @@
 {
   "name": "company-memory",
-  "version": "0.1.0-pilot.3",
-  "description": "Shared memory for your accounts and AI clients.",
+  "version": "0.1.0-pilot.4",
+  "description": "Shared task memory with full CARD lifecycle and scoped client access.",
   "author": {
     "name": "AI4SALE",
     "url": "https://ai4.sale"
   },
-  "homepage": "https://portal-stage.ai4.sale/connect",
+  "homepage": "https://memory.ai4.sale/connect",
   "skills": "./skills/",
   "mcpServers": "./.mcp.json",
   "interface": {
-    "displayName": "Company Memory",
+    "displayName": "Company Memory by AI 4 SALE",
     "shortDescription": "Shared memory for AI clients",
     "longDescription": "Sign in, create a workspace or join one by invitation, then approve this client for shared memory. Each client has its own access and can be disconnected separately. Selected results go through publication checks. Pilot service.",
     "developerName": "AI4SALE",
     "category": "Productivity",
-    "websiteURL": "https://portal-stage.ai4.sale/connect",
+    "websiteURL": "https://memory.ai4.sale/connect",
     "defaultPrompt": [
       "Connect this client to my Company Memory workspace."
     ],
@@ -25,7 +25,8 @@
     ],
     "composerIcon": "./assets/ai4sale.png",
     "logo": "./assets/ai4sale.png",
-    "privacyPolicyURL": "https://portal-stage.ai4.sale/privacy/company-memory",
-    "termsOfServiceURL": "https://portal-stage.ai4.sale/terms/company-memory"
-  }
+    "privacyPolicyURL": "https://memory.ai4.sale/privacy/company-memory",
+    "termsOfServiceURL": "https://memory.ai4.sale/terms/company-memory"
+  },
+  "hooks": "./hooks/hooks.json"
 }

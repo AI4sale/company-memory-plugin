@@ -20,8 +20,12 @@ If an unapproved request expires, explicitly ask the plugin to Connect again. Th
 
 ## Pilot boundaries
 
-This is a pilot catalogue package, not approval or listing in the public OpenAI directory. Backend service: portal-stage.ai4.sale. The account portal handles workspace plans separately. Do not use real card charges for acceptance testing. Native OAuth, workspace creation, invitation acceptance, reviewed publication, cross-client retrieval and selective revocation were exercised on clawd01. Public-directory review and the final launch acceptance remain pending.
+This is a pilot catalogue package, not approval or listing in the public OpenAI directory. Backend service: memory.ai4.sale. The account portal handles workspace plans separately. Do not use real card charges for acceptance testing. Native OAuth, workspace creation, invitation acceptance, reviewed publication, cross-client retrieval and selective revocation were exercised on clawd01. Public-directory review and the final launch acceptance remain pending.
 
 Support: info@ai4.sale
 
 Supplemental material: [native pilot evidence walkthrough](review/README.md).
+
+## Automatic task lifecycle
+
+Native Codex uses the bundled full CARD runtime after normal hook trust. Python 3, PyYAML and filelock must be available on the client. The browser/cloud MCP path maintains the same full CARD on the server. Both use the existing publication checker and scoped permissions; do not deliver one task through both paths. Read-only connections do not save CARDs. Native and browser model-driven acceptance is still in progress; tool availability alone is not proof of automatic completion.
