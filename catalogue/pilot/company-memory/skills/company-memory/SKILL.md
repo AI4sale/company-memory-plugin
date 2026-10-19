@@ -20,6 +20,14 @@ does not require local files, Python, base64 encoding or a made-up task ID.
 The numbered steps below describe shared consent/readback rules and the native
 transport fallback. Never duplicate delivery between the two modes.
 
+For native hosts, the server selects local or server checkpoint storage through
+`account.card_protocol.routes[].native_storage`. The native runtime follows this
+signal automatically. In server mode the local CARD remains the working/offline
+cache; acknowledged full CARD checkpoints and selected evidence can be restored
+from the server. Keep editing that same CARD and use the same native Stop delivery.
+Do not start a second task with task_begin or manually call native_card alongside
+the hooks. Unsent offline changes are recoverable only from the local cache.
+
 1. On first use, finish the host's normal browser OAuth connection. Call
    company_memory_account. If there is no accessible workspace, direct the user
    to https://memory.ai4.sale/connect to choose **Create workspace**

@@ -44,7 +44,7 @@
     ],
     "PreToolUse": [
       {
-        "matcher": "^mcp__(?:company_memory|company-memory)__(?:company_memory_search|company_memory_fetch|company_memory_card_upload|company_memory_card_download|company_memory_card_finalize|company_memory_submit_for_review)$",
+        "matcher": ".*",
         "hooks": [
           {
             "type": "command",

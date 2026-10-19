@@ -58,6 +58,8 @@ class MCPCardClient:
         except urllib.error.HTTPError as exc:
             raise CardTransportError('oauth_required' if exc.code==401 else 'memory_http_error',
                 retryable=exc.code in (429,502,503,504)) from None
+        except (urllib.error.URLError,TimeoutError,ConnectionError):
+            raise CardTransportError('connection_unavailable',retryable=True) from None
 
     def target(self):
         return {'memory_id':self.config['memory_id'],'zone_id':self.config['zone_id']}
