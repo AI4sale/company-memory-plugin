@@ -1,3 +1,42 @@
+# Company Memory by AI 4 SALE
+
+[Watch the final walkthrough](company-memory-walkthrough-20261020.mp4)
+· [English captions](company-memory-walkthrough-20261020.en.srt)
+· [Reviewer guide](reviewer-guide-20261020.md)
+· [User guide](https://memory.ai4.sale/support/company-memory)
+
+One shared memory layer for your AI clients. The 6:41 walkthrough follows a real
+task across Codex, Codex CLI, ChatGPT and the account portal: connect, retrieve
+context, do local work, invite a teammate, correct a decision, inspect/export
+information, remove a disposable note and control client access.
+
+This walkthrough uses an existing Company Memory account and a prepared demo
+workspace. Account registration is not shown. Processing waits are shortened.
+All eight chapters and ten functional plus four boundary scenarios are retained.
+See the reviewer guide for the exact setup and evidence limits.
+
+# Company Memory by AI 4 SALE
+
+- 00:00:00 — Connect your shared memory
+- 00:01:11 — Understand the project
+- 00:01:54 — Do real work in Codex CLI
+- 00:02:47 — Bring in a teammate
+- 00:03:29 — Keep the decision current
+- 00:04:19 — Review and share information
+- 00:05:01 — Remove an old note
+- 00:05:28 — Control access and continue
+
+Duration: 00:06:40.
+
+
+Video: 1920×1080, 30 fps, H.264/AAC. English narration and captions.
+SHA256: `d950bf45348d107864df359e433020aed65c6237f3551eb0b0c0e3988550b116`.
+
+## Archived review material
+
+The following older versions are retained for traceability. Use the final
+walkthrough and reviewer guide linked above for this submission.
+
 # Company Memory by AI 4 SALE: product and review walkthrough
 
 [Watch the complete walkthrough](company-memory-product-tour-v5.mp4) · [English captions](company-memory-product-tour-v5.en.srt) · [Exact prompts and checks](review-walkthrough.md)

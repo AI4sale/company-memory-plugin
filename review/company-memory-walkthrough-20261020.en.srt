@@ -1,0 +1,493 @@
+1
+00:00:00,000 --> 00:00:02,840
+Let’s walk through Company Memory by AI 4 SALE.
+
+2
+00:00:03,380 --> 00:00:07,225
+The problem is familiar: you start a new chat, and suddenly you’re
+
+3
+00:00:07,240 --> 00:00:09,540
+explaining the project all over again.
+
+4
+00:00:10,200 --> 00:00:14,325
+Here are our eight stops: connect the memory, understand the project, do
+
+5
+00:00:14,340 --> 00:00:19,165
+real work, bring in a teammate, update a decision, review and share
+
+6
+00:00:19,180 --> 00:00:23,080
+information, remove an old note, and control access.
+
+7
+00:00:23,667 --> 00:00:27,287
+We’ll follow Aurora, our demo website, between Codex and ChatGPT.
+
+8
+00:00:27,927 --> 00:00:31,312
+This is the account portal, where I choose which shared memory this
+
+9
+00:00:31,327 --> 00:00:32,267
+connection can use.
+
+10
+00:00:33,267 --> 00:00:35,807
+A zone separates one area of knowledge from another.
+
+11
+00:00:36,187 --> 00:00:37,987
+General holds our project information;
+
+12
+00:00:38,527 --> 00:00:40,947
+the restricted Aurora General zone stays separate.
+
+13
+00:00:41,547 --> 00:00:44,627
+Sharing project context doesn’t mean opening every part of the business.
+
+14
+00:00:45,267 --> 00:00:48,687
+For this connection, I allow reading and recording useful results.
+
+15
+00:00:49,227 --> 00:00:51,747
+The owner also has the controls we’ll use later.
+
+16
+00:00:52,287 --> 00:00:56,087
+A teammate can have fewer permissions, even when using the same memory.
+
+17
+00:00:56,727 --> 00:00:58,767
+A writing agent can record results;
+
+18
+00:00:59,047 --> 00:01:01,687
+a reporting assistant may only need to read them.
+
+19
+00:01:02,667 --> 00:01:03,647
+Now we’re connected.
+
+20
+00:01:04,287 --> 00:01:07,687
+Another app can use the same memory without creating a separate copy.
+
+21
+00:01:08,127 --> 00:01:10,367
+From here, I can ask ordinary work questions.
+
+22
+00:01:11,900 --> 00:01:13,760
+First, I ask what’s happening with Aurora.
+
+23
+00:01:14,440 --> 00:01:18,280
+Codex looks up the project context and gives me a source-backed answer.
+
+24
+00:01:18,780 --> 00:01:22,280
+I can inspect the source instead of just trusting a confident summary.
+
+25
+00:01:22,820 --> 00:01:26,305
+That matters: it tells us what was agreed, not just what sounds
+
+26
+00:01:26,320 --> 00:01:26,920
+plausible.
+
+27
+00:01:28,700 --> 00:01:31,220
+The scope is a one-page website with a contact form.
+
+28
+00:01:31,640 --> 00:01:35,125
+We agree on the button, the follow-up owner and why online payments
+
+29
+00:01:35,140 --> 00:01:37,960
+are out. I ask for a developer brief;
+
+30
+00:01:38,380 --> 00:01:40,580
+the useful outcome is recorded automatically.
+
+31
+00:01:42,633 --> 00:01:45,818
+Notice the difference between a request being processed and a result
+being
+
+32
+00:01:45,833 --> 00:01:50,078
+available. Once the outcome is accepted, another permitted client can
+read
+
+33
+00:01:50,093 --> 00:01:52,933
+it. The next scene checks exactly that.
+
+34
+00:01:54,533 --> 00:01:56,633
+Here’s a fresh Codex CLI session.
+
+35
+00:01:57,173 --> 00:02:00,158
+I ask it to apply the agreed change, but I don’t paste
+
+36
+00:02:00,173 --> 00:02:02,973
+the earlier conversation or repeat the button label.
+
+37
+00:02:03,513 --> 00:02:05,513
+It needs the shared project knowledge.
+
+38
+00:02:06,067 --> 00:02:07,287
+The change is small on purpose.
+
+39
+00:02:07,367 --> 00:02:11,172
+We can see the actual edit, rather than just a plan saying
+
+40
+00:02:11,187 --> 00:02:12,147
+what should happen.
+
+41
+00:02:13,147 --> 00:02:14,527
+Codex is doing the development;
+
+42
+00:02:14,807 --> 00:02:17,147
+Company Memory supplies the project context.
+
+43
+00:02:17,487 --> 00:02:22,112
+The before-and-after view lets us check the change, rather than rely on
+
+44
+00:02:22,127 --> 00:02:23,707
+the assistant saying it has finished.
+
+45
+00:02:24,633 --> 00:02:25,733
+Now let’s look at the page.
+
+46
+00:02:25,873 --> 00:02:27,993
+The button says ‘Book a walkthrough’.
+
+47
+00:02:28,013 --> 00:02:30,433
+I click it, and the contact form appears.
+
+48
+00:02:30,733 --> 00:02:32,533
+That’s the behavior we asked for.
+
+49
+00:02:35,200 --> 00:02:38,805
+The useful result is recorded automatically, including what was checked
+
+50
+00:02:38,820 --> 00:02:39,980
+and what wasn’t done.
+
+51
+00:02:40,700 --> 00:02:43,240
+This is a local change, not a public deployment.
+
+52
+00:02:43,660 --> 00:02:45,520
+There’s no second ‘save this’ message.
+
+53
+00:02:47,333 --> 00:02:49,233
+Now someone else needs to report on the work.
+
+54
+00:02:49,713 --> 00:02:53,113
+Normally, that means finding the right chat and writing another recap.
+
+55
+00:02:53,713 --> 00:02:56,453
+Instead, I invite a teammate to the same project memory.
+
+56
+00:02:58,600 --> 00:03:00,060
+They join with their own account.
+
+57
+00:03:00,480 --> 00:03:04,305
+This ChatGPT connection can read General, but it can’t change the shared
+
+58
+00:03:04,320 --> 00:03:08,265
+records. Each person has their own account, and each connection has its
+
+59
+00:03:08,280 --> 00:03:12,185
+own permissions. We’re sharing project knowledge, not the owner’s login
+
+60
+00:03:12,200 --> 00:03:13,560
+or original conversation.
+
+61
+00:03:14,900 --> 00:03:17,700
+In ChatGPT, I ask for a progress update.
+
+62
+00:03:18,160 --> 00:03:21,040
+The answer combines the agreed decision with the work just completed.
+
+63
+00:03:21,480 --> 00:03:25,145
+It separates what was planned, tested locally and not deployed without
+
+64
+00:03:25,160 --> 00:03:26,300
+inventing a launch date.
+
+65
+00:03:29,100 --> 00:03:32,700
+Here’s the problem with remembering only the original decision: plans
+change.
+
+66
+00:03:33,000 --> 00:03:37,180
+We now want ‘Request pilot access’, and Maya will handle enquiries.
+
+67
+00:03:37,560 --> 00:03:39,220
+The rest of the agreement stays the same.
+
+68
+00:03:39,360 --> 00:03:40,740
+Maya handles enquiries;
+
+69
+00:03:40,760 --> 00:03:42,280
+Nia remains the project owner.
+
+70
+00:03:42,380 --> 00:03:43,860
+Those are different responsibilities.
+
+71
+00:03:45,033 --> 00:03:47,273
+The existing decision is being updated.
+
+72
+00:03:47,853 --> 00:03:51,078
+While the check is still running, it isn’t ready to use as
+
+73
+00:03:51,093 --> 00:03:52,173
+the accepted version.
+
+74
+00:03:52,653 --> 00:03:55,733
+We confirm availability before moving to the other client.
+
+75
+00:03:57,033 --> 00:03:58,913
+Now a fresh ChatGPT conversation.
+
+76
+00:03:59,493 --> 00:04:03,038
+I ask what the button should say and who handles enquiries, without
+
+77
+00:04:03,053 --> 00:04:04,593
+supplying either new value.
+
+78
+00:04:05,013 --> 00:04:07,833
+The answer brings back ‘Request pilot access’ and Maya.
+
+79
+00:04:08,633 --> 00:04:11,333
+That updates the shared plan, not the website itself.
+
+80
+00:04:11,813 --> 00:04:14,133
+The earlier implementation remains earlier work.
+
+81
+00:04:14,473 --> 00:04:17,713
+Remembering a new requirement is not the same as implementing it.
+
+82
+00:04:19,700 --> 00:04:23,080
+Sometimes you need to know why today’s answer differs from yesterday’s.
+
+83
+00:04:23,300 --> 00:04:24,900
+Here I ask for the plan’s history.
+
+84
+00:04:25,200 --> 00:04:28,840
+We can follow the recorded changes instead of relying on somebody’s
+recollection.
+
+85
+00:04:31,033 --> 00:04:35,278
+Next, the designer needs the brief and latest decision not access to
+
+86
+00:04:35,293 --> 00:04:36,353
+every project record.
+
+87
+00:04:36,853 --> 00:04:38,653
+I ask for both in one file.
+
+88
+00:04:39,153 --> 00:04:42,513
+The assistant retrieves those selected records and prepares the handoff.
+
+89
+00:04:42,993 --> 00:04:46,618
+This is a snapshot for the designer, not ongoing permission to browse
+
+90
+00:04:46,633 --> 00:04:47,593
+the team’s memory.
+
+91
+00:04:48,800 --> 00:04:52,340
+I open the file and check the current button text and owner.
+
+92
+00:04:53,440 --> 00:04:56,965
+The designer gets the selected information in one place, without needing
+
+93
+00:04:56,980 --> 00:05:00,000
+to navigate our workspace or read through the original conversation.
+
+94
+00:05:01,967 --> 00:05:04,287
+Not everything needs to stay in memory forever.
+
+95
+00:05:05,507 --> 00:05:10,452
+This temporary recording note has served its purpose, so I ask to
+
+96
+00:05:10,467 --> 00:05:14,527
+remove it. We’re deleting one specific note, not the project.
+
+97
+00:05:15,433 --> 00:05:18,153
+The response confirms the note is no longer available through memory.
+
+98
+00:05:18,793 --> 00:05:22,453
+I then open Aurora’s current decision: it’s still there.
+
+99
+00:05:22,973 --> 00:05:26,293
+Removing old clutter doesn’t mean losing the knowledge we still need.
+
+100
+00:05:28,600 --> 00:05:30,020
+Finally, let’s check the limits.
+
+101
+00:05:30,420 --> 00:05:32,940
+Seventeen times twenty-four is just a calculation.
+
+102
+00:05:33,260 --> 00:05:36,245
+It needs no project context, so Company Memory doesn’t need to be
+
+103
+00:05:36,260 --> 00:05:36,680
+involved.
+
+104
+00:05:38,067 --> 00:05:41,832
+Back in the read-only connection, I try to add online checkout to
+
+105
+00:05:41,847 --> 00:05:46,272
+the plan. The request does not override the permission: this teammate
+can
+
+106
+00:05:46,287 --> 00:05:48,647
+read the project, but cannot change it.
+
+107
+00:05:49,367 --> 00:05:52,852
+The supplier quote belongs to the restricted Aurora General zone,
+outside
+
+108
+00:05:52,867 --> 00:05:53,887
+this connection’s access.
+
+109
+00:05:54,147 --> 00:05:56,767
+The assistant doesn’t reveal it or guess the price.
+
+110
+00:05:57,407 --> 00:06:00,087
+Shared memory still means selectively shared knowledge.
+
+111
+00:06:01,100 --> 00:06:03,800
+I can also revoke just this ChatGPT connection.
+
+112
+00:06:04,160 --> 00:06:06,965
+That’s useful when I stop using an app or want to remove
+
+113
+00:06:06,980 --> 00:06:09,440
+its access without disrupting everyone else.
+
+114
+00:06:09,720 --> 00:06:12,600
+On its next request, it can no longer read the project.
+
+115
+00:06:13,060 --> 00:06:15,720
+Another authorized connection still retrieves the decision;
+
+116
+00:06:16,060 --> 00:06:17,900
+the knowledge hasn’t been deleted.
+
+117
+00:06:19,933 --> 00:06:23,598
+So we’ve carried one project through a real change, a handoff and
+
+118
+00:06:23,613 --> 00:06:27,678
+a revised decision, without passing the original chat around or asking
+
+119
+00:06:27,693 --> 00:06:28,873
+for a separate save.
+
+120
+00:06:30,100 --> 00:06:32,765
+For the exact steps, open the user guide at
+
+121
+00:06:32,780 --> 00:06:35,120
+memory dot A I four dot sale.
+
+122
+00:06:35,560 --> 00:06:39,260
+It covers setup, permissions and the workflows we’ve just followed.
