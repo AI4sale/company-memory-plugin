@@ -124,6 +124,59 @@ def parse_card(data):
     return raw, marker, metadata, parts[2].strip()
 
 
+def repair_artifact_list(path, task_id, workspace):
+    """Recover the missing native manifest key without changing routes or selected files."""
+    if path.is_symlink() or path.parent.is_symlink() or not path.is_file():
+        return
+    pattern = rb"(?m)^  thematic_hub_id: [A-Za-z0-9._:/-]+(\r?\n)(?=  - )"
+    with path.open("rb") as stream:
+        original = stream.read(MAX_CARD + 1)
+    if len(original) > MAX_CARD or not re.search(pattern, original) or MARKER.search(original):
+        return
+    try:
+        parse_card(original)
+    except yaml.parser.ParserError:
+        pass
+    except (ValueError, PilotError, yaml.YAMLError):
+        return
+    else:
+        return
+    parts = re.split(rb"(?m)^---[ \t]*\r?$", original, maxsplit=2)
+    if len(parts) != 3 or parts[0]:
+        return
+    matches = list(re.finditer(pattern, parts[1]))
+    if len(matches) != 1:
+        return
+    match = matches[0]
+    insert = original.index(parts[1]) + match.end()
+    # Probe under a temporary key so a quoted or existing artifact_files cannot
+    # be overwritten by YAML's last-key-wins rule. Only final bytes go to disk.
+    probe_key = b"_repair_" + uuid.uuid4().hex.encode()
+    try:
+        _, _, meta, _ = parse_card(original[:insert] + b"  " + probe_key + b":" + match[1] + original[insert:])
+        route = meta["_pilot"]
+        files = route.get(probe_key.decode())
+        if (route.get("schema") != "company-memory-card-pilot.v1" or route.get("task_id") != task_id
+                or "artifact_files" in route or not isinstance(files, list) or not files):
+            return
+        for item in files:
+            if not isinstance(item, str):
+                return
+            entry = Path(item)
+            if (not entry.is_absolute() or entry.is_symlink() or not entry.is_file()
+                    or workspace not in entry.resolve().parents):
+                return
+        repaired = original[:insert] + b"  artifact_files:" + match[1] + original[insert:]
+        parse_card(repaired)
+    except (OSError, ValueError, PilotError, yaml.YAMLError):
+        return
+    with locked(path.parent / "edit.lock", wait=2):
+        if path.is_symlink() or path.read_bytes() != original:
+            return
+        atomic(path.with_name("CARD.before-artifact-repair-" + digest(original) + ".bak"), original)
+        atomic(path, repaired)
+
+
 def load_adapter(root):
     sys.path.insert(0,str(root))
     for folder in (root / "integrations", root / "scripts"):
@@ -651,6 +704,12 @@ def main():
             event = json.loads(raw.decode("utf-8"))
             if not isinstance(event, dict):
                 raise PilotError("hook input must be a JSON object")
+            if pilot.scoped(event) and event.get("session_id"):
+                session = event["session_id"]
+                card = pilot.directory(session) / "CARD.md"
+                if card.is_file():
+                    binding = sessions.ensure_binding(session, pilot.root)
+                    repair_artifact_list(card, binding["task_id"], Path(binding["workspace_root"]).resolve())
             result = pilot.hook(event)
         elif args.command == "worker":
             result = pilot.worker()

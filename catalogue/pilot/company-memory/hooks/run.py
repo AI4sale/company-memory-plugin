@@ -23,14 +23,16 @@ def main():
     sys.path.insert(0,str(runtime))
     from integrations.company_memory_mcp.card_client import MCPCardClient
     from integrations.codex_memory_session_context import ensure_binding
-    from scripts.codex_card_hook_pilot import atomic,encoded,Pilot,load_adapter
+    from scripts.codex_card_hook_pilot import atomic,encoded,Pilot,load_adapter,repair_artifact_list
     from integrations.company_memory_mcp.native_storage import NativeStorage
     state=DATA/'cards'
     binding=ensure_binding(event['session_id'],state)
+    folder=state/hashlib.sha256(event['session_id'].encode()).hexdigest()[:32]
+    repair_artifact_list(folder/'CARD.md',binding['task_id'],Path(binding['workspace_root']).resolve())
     credential_file=Path(os.environ.get('CODEX_HOME',str(Path.home()/'.codex')))/'.credentials.json'
     client=MCPCardClient({'endpoint':'https://memory.ai4.sale/api/mcp','credential_file':str(credential_file)},binding['task_id'])
     client.timeout=3
-    cached_path=state/hashlib.sha256(event['session_id'].encode()).hexdigest()[:32]/'native-consumer.json'
+    cached_path=folder/'native-consumer.json'
     cached=json.loads(cached_path.read_bytes()) if cached_path.exists() else None
     account=None
     if event.get('hook_event_name')!='PreToolUse' or cached is None:
