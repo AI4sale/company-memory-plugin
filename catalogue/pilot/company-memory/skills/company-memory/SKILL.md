@@ -14,7 +14,7 @@ does not replace it. A read-only grant permits retrieval, not publication.
 Choose the lifecycle before proceeding: if this host supplies a local CARD and
 native hook instructions, follow them and use native Stop delivery. In ChatGPT
 web, Cloud Work or another MCP-only client, use task_begin, task_resume,
-card_update and task_finish as described in references/card-protocol.md. This
+card_update and task_finish as described in references/card-protocol.md. Resume an unfinished task with its existing handle. For the next distinct task after completion, call task_begin again in the same chat. This
 remote path creates the full CARD on the server and supplies the task ID; it
 does not require local files, Python, base64 encoding or a made-up task ID.
 The numbered steps below describe shared consent/readback rules and the native
@@ -46,7 +46,9 @@ the hooks. Unsent offline changes are recoverable only from the local cache.
 4. Update the complete task CARD before answering. For a completed, evidenced
    result, preserve it automatically within the approved writable memory and zone;
    no separate save request is required. If the installed CARD runtime delivers
-   it, seal it through that runtime and let Stop deliver; never double-submit.
+   it, record the current outcome and evidence in the CARD. Stop seals a newly obtained
+   result and sends it to the checker. Keep an unfinished task in its current CARD;
+   after a completed snapshot, the next request starts a separate result in the same chat.
    The bundled hooks run the existing CARD protocol after normal host trust.
    Check account.card_protocol for the actual enabled transport. When delivering
    through MCP directly, upload the complete CARD.md and selected evidence with

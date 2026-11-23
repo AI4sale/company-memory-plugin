@@ -1,6 +1,6 @@
 {
   "name": "company-memory",
-  "version": "0.1.0-pilot.16",
+  "version": "0.1.0-pilot.17",
   "description": "Shared task memory with full CARD lifecycle and scoped client access.",
   "author": {
     "name": "AI4SALE",

@@ -84,8 +84,8 @@ a successful result, a useful lesson, evidence, consent or a receipt.
 
 ## Completion and publication
 
-Only obtained permits the native completion seal. Use the installed runtime's
-mark-done operation after the last edit. It binds the current session/turn, CARD
+Only obtained permits the native completion seal. Record a fresh, explicit outcome for this
+turn. Stop seals it automatically. Explicit mark-done remains available after the last edit. It binds the current session/turn, CARD
 bytes and selected evidence hashes. Later edits invalidate that seal. Stop then
 snapshots and delivers the exact CARD and evidence through the existing checker.
 Unfinished cards remain drafts. A seal or upload is not accepted publication.
